@@ -1,3 +1,35 @@
 <resources>
+
+    <!-- Questions -->
     <string name="app_name">Quiz App</string>
+    <string name="question_one">What is the capital of Germany?</string>
+    <string name="question_two">In which continent is Germany located?</string>
+    <string name="question_three">In which year was the fall of Berlin Wall?</string>
+    <string name="question_four">Name two German politicians</string>
+    <string name="question_five">What is richest state in Germany?</string>
+
+    <!-- Question 1 answers -->
+
+    <string name="berlin">Berlin</string>
+    <string name="bon">Bon</string>
+    <string name="munich">Munich</string>
+
+    <!-- Question 3 answers -->
+
+    <string name="y1989">1989</string>
+    <string name="y1990">1990</string>
+    <string name="y1991">1991</string>
+
+    <!-- Question 4 answers -->
+
+    <string name="angela_merkel">Angela Merkel</string>
+    <string name="joachim_guack">Joachim Guack</string>
+    <string name="michael_schumacher">Michael Schumacher</string>
+
+    <!-- Question 5 answers -->
+
+    <string name="north_rhine">North Rhine-Westphalia</string>
+    <string name="baden">Baden-Württemberg</string>
+    <string name="bavaria">Bavaria</string>
+
 </resources>

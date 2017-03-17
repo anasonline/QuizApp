@@ -1,18 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.android.quizapp.MainActivity">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            style="@style/Question"
+            android:text="@string/question_one" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/berlin"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/berlin" />
+
+            <RadioButton
+                android:id="@+id/bon"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bon" />
+
+            <RadioButton
+                android:id="@+id/munich"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/munich" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question_two" />
+
+        <EditText
+            android:id="@+id/customer_name"
+            style="@style/Text" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question_three" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/y1989"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/y1989" />
+
+            <RadioButton
+                android:id="@+id/y1990"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/y1990" />
+
+            <RadioButton
+                android:id="@+id/y1991"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/y1991" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question_four" />
+
+        <CheckBox
+            android:id="@+id/angela_merkel"
+            style="@style/CheckBox"
+            android:text="@string/angela_merkel" />
+
+        <CheckBox
+            android:id="@+id/joachim_guack"
+            style="@style/CheckBox"
+            android:text="@string/joachim_guack" />
+
+        <CheckBox
+            android:id="@+id/michael_muller"
+            style="@style/CheckBox"
+            android:text="@string/michael_schumacher" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question_five" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/north_rhine"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/north_rhine" />
+
+            <RadioButton
+                android:id="@+id/baden"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/baden" />
+
+            <RadioButton
+                android:id="@+id/bavaria"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bavaria" />
+        </RadioGroup>
+
+        <Button style="@style/btn" />
+
+    </LinearLayout>
+
+
+</ScrollView>
