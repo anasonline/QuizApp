@@ -54,10 +54,17 @@ public class MainActivity extends AppCompatActivity {
         int q1Score = 0;
 
         RadioGroup rg = (RadioGroup) findViewById(R.id.q1_radio_group);
-        String selectedAnswer = ((RadioButton) findViewById(rg.getCheckedRadioButtonId())).getText().toString();
 
-        if (selectedAnswer.equals("Berlin")) {
-            q1Score = 1;
+        RadioButton radio = (RadioButton) findViewById(rg.getCheckedRadioButtonId());
+
+        if (radio != null) {
+            String selectedAnswer = radio.getText().toString();
+            if (selectedAnswer.equals("Berlin")) {
+                q1Score = 1;
+            }
+
+        } else {
+            q1Score = 0;
         }
 
         return q1Score;
@@ -80,6 +87,10 @@ public class MainActivity extends AppCompatActivity {
             q2score = 1;
         }
 
+        if (q2Answer.equals(null)) {
+            q2score = 0;
+        }
+
         return q2score;
     }
 
@@ -95,10 +106,16 @@ public class MainActivity extends AppCompatActivity {
         int q3Score = 0;
 
         RadioGroup rg = (RadioGroup) findViewById(R.id.q3_radio_group);
-        String selectedAnswer = ((RadioButton) findViewById(rg.getCheckedRadioButtonId())).getText().toString();
+        RadioButton radio = (RadioButton) findViewById(rg.getCheckedRadioButtonId());
 
-        if (selectedAnswer.equals("1989")) {
-            q3Score = 1;
+        if (radio != null) {
+            String selectedAnswer = radio.getText().toString();
+            if (selectedAnswer.equals("1989")) {
+                q3Score = 1;
+            }
+
+        } else {
+            q3Score = 0;
         }
 
         return q3Score;
@@ -130,7 +147,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return q4score;
-
     }
 
     /**
@@ -145,13 +161,18 @@ public class MainActivity extends AppCompatActivity {
         int q5Score = 0;
 
         RadioGroup rg = (RadioGroup) findViewById(R.id.q5_radio_group);
-        String selectedAnswer = ((RadioButton) findViewById(rg.getCheckedRadioButtonId())).getText().toString();
+        RadioButton radio = (RadioButton) findViewById(rg.getCheckedRadioButtonId());
 
-        if (selectedAnswer.equals("North Rhine-Westphalia")) {
-            q5Score = 1;
+        if (radio != null) {
+            String selectedAnswer = radio.getText().toString();
+            if (selectedAnswer.equals("North Rhine-Westphalia")) {
+                q5Score = 1;
+            }
+
+        } else {
+            q5Score = 0;
         }
 
         return q5Score;
     }
-
 }
