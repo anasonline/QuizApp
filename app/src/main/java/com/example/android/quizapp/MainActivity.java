@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         int percentScore = (100 * score) / numOfQuestions;
 
         Toast.makeText(this, "Your score is: " + percentScore + "%", Toast.LENGTH_LONG).show();
-
     }
 
     /**
