@@ -7,6 +7,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,11 +26,20 @@ public class MainActivity extends AppCompatActivity {
 
     public void calculateScore(View view) {
 
+        int numOfQuestions = 5;
+
         int q1Score = questionOneScore(view);
         int q2Score = questionTwoScore(view);
         int q3Score = questionThreeScore(view);
         int q4Score = questionFourScore(view);
         int q5Score = questionFiveScore(view);
+
+        int score = q1Score + q2Score + q3Score + q4Score + q5Score;
+
+        int percentScore = (100 * score) / numOfQuestions;
+
+        Toast.makeText(this, "Your score is: " + percentScore + "%", Toast.LENGTH_LONG).show();
+
     }
 
     /**
