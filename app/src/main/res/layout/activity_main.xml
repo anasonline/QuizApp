@@ -14,6 +14,7 @@
             android:text="@string/question_one" />
 
         <RadioGroup
+            android:id="@+id/q1_radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -45,7 +46,7 @@
             android:text="@string/question_two" />
 
         <EditText
-            android:id="@+id/customer_name"
+            android:id="@+id/q2_txt"
             style="@style/Text" />
 
         <TextView
@@ -53,6 +54,7 @@
             android:text="@string/question_three" />
 
         <RadioGroup
+            android:id="@+id/q3_radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -103,6 +105,7 @@
             android:text="@string/question_five" />
 
         <RadioGroup
+            android:id="@+id/q5_radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -129,7 +132,10 @@
                 android:text="@string/bavaria" />
         </RadioGroup>
 
-        <Button style="@style/btn" />
+        <Button
+            android:id="@+id/submit"
+            style="@style/btn"
+            android:onClick="calculateScore" />
 
     </LinearLayout>
 
